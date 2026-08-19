@@ -1078,11 +1078,12 @@ ul.acc li::before{background:var(--accent)}
 
   <div class="card raised" style="border-color:var(--indigo)">
     <div class="rf" style="font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--indigo);margin-bottom:6px">Option A</div>
-    <h3>We fund the build and take a stake in the platform, never in your gym</h3>
+    <h3>We can co-fund the build for a stake in the platform, never in your gym</h3>
     <p style="font-size:14px">You put in <strong>$40,000</strong>, the smallest cash contribution we can start
-    on, and we fund the rest ourselves. What we take for that is equity in a <strong>new company that holds
-    SFIDI OS</strong>. You buy it back down as the journey gets funded, in cash or by bringing us paying venues.
-    One instrument, and the equity is the whole price of it.</p>
+    on. After discovery, we can agree to fund part of the later build in exchange for equity in a <strong>new
+    company that holds SFIDI OS</strong>. You buy that equity back down as the journey gets funded, in cash or by
+    bringing us paying venues. Equity is issued only against funding agreed in writing and actually deployed;
+    neither party is obliged to fund phases 2 or 3 unless it separately agrees to do so.</p>
 
     <div class="ratchet">
       <div class="rc"><div class="k">At signature</div><div class="n">70%</div><div class="s">While we fund the journey</div></div>
@@ -1090,18 +1091,19 @@ ul.acc li::before{background:var(--accent)}
       <div class="rc"><div class="k">Once it is funded</div><div class="n">40%</div><div class="s">The floor, after you pay it down</div></div>
     </div>
     <p style="font-size:12.5px;color:var(--muted);margin:0 0 14px">Both figures scale with how much you defer.
-    Fund half in cash and they halve. Fund all of it in cash and you own the software outright.</p>
+    Fund half in cash and they halve. Fund all of it in cash and you own the software outright. These figures
+    apply only where the parties agree to proceed under one of the funded-build scenarios below; they do not set
+    the terms of any new venture negotiated after discovery.</p>
 
     <div class="callout warn">
       <h4>If you stop after discovery, are you committed to the other $1.1M?</h4>
       <p><strong>No. You owe nothing further.</strong> Stopping at a phase boundary creates no obligation to
       spend another dollar, under this option or any other.</p>
-      <p style="margin-bottom:0">The stake is the other half of that answer. It is priced against the whole
-      $1,240,000 road to market ready, because a platform company holding only a discovery prototype is worth
-      very little and what makes it worth something is phases 2 and 3. If you have not funded those,
-      <strong>we commit to funding and building them ourselves</strong>, and that commitment is what the 70% buys.
-      The stake is issued against funding we have actually committed, so if we stop funding it adjusts down to
-      what was deployed. Fund more of the journey yourself and it falls in a straight line to the floor.</p>
+      <p style="margin-bottom:0">If SFIDI chooses not to fund the next phase, that does not necessarily end the
+      platform opportunity. The parties may instead agree a separate venture structure under which we fund some
+      or all of the remaining build in exchange for an increased stake in the platform company. Any such
+      arrangement would be negotiated at that point and documented separately; <strong>neither party is committed
+      to it under this proposal</strong>.</p>
     </div>
 
     <div class="tbl-scroll">
@@ -1301,6 +1303,10 @@ ul.acc li::before{background:var(--accent)}
     <table>
       <thead><tr><th style="width:20%">Risk</th><th>Exposure</th><th style="width:30%">What we do about it</th><th class="r">Rating</th></tr></thead>
       <tbody>
+        <tr class="hl"><td><strong>Key person, two engineers</strong></td>
+          <td>Faysal and Zak are the entire build capacity. Losing either mid-phase costs weeks, and there is no bench.</td>
+          <td>Cross-training so no subsystem has one author, Imran hands-on as a third pair, test-first and ADRs so the system is legible to a stranger, and free source escrow plus a handover pack at every boundary.</td>
+          <td class="r"><span class="badge b-risk">High</span></td></tr>
         <tr class="hl"><td><strong>Sustained intensity</strong></td>
           <td>Seven months at this pace is a real load, and quality degrading late shows up in a payments ledger as bugs found in production.</td>
           <td>Phase boundaries are genuine breaks. Test-first holds under schedule pressure, because it is what catches tiredness. If a date has to move rather than the bar, we say so in writing at the time.</td>
@@ -1375,7 +1381,7 @@ ul.acc li::before{background:var(--accent)}
         <li><strong>Payment terms:</strong> 14 days.</li>
         <li><strong>Change control:</strong> written approval before any change is worked. Contingency drawn only against approved change.</li>
         <li><strong>Intellectual property, cash structures:</strong> all work product assigns to you on payment for the phase that produced it. Discovery output assigns whether or not you proceed.</li>
-        <li><strong>Intellectual property, Option A:</strong> where we fund part of the build for equity, the platform IP assigns on the same trigger to the platform company you co-own, and SFIDI at Rialto holds a perpetual, irrevocable, royalty-free licence to run the venue on it. Discovery output still assigns directly to you. Option C issues no shares, so the clause above applies to it unchanged. Which clause governs is settled in the agreement before signature.</li>
+        <li><strong>Intellectual property, Option A:</strong> where we fund part of the build for equity, the platform IP assigns on the same trigger to the platform company you co-own, and SFIDI at Rialto holds a perpetual, irrevocable, royalty-free licence to run the venue on it. Discovery output initially assigns directly to SFIDI; if Option A proceeds, SFIDI will contribute or license that Discovery IP to the platform company on terms agreed in the shareholders agreement. Option C issues no shares, so the clause above applies to it unchanged. Which clause governs is settled in the agreement before signature.</li>
         <li><strong>Acceptance:</strong> against the written test for each phase in section 05. Ten business days of UAT, severity 1 and 2 defects at zero, and an independent assessor on anything still disputed after five business days.</li>
         <li><strong>Escrow and handover:</strong> source escrow and a documented handover pack at any phase boundary, free, on request.</li>
         <li><strong>Cancellation:</strong> at any phase boundary with 30 days' notice. No termination fee.</li>

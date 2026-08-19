@@ -960,9 +960,10 @@ body.locked > *:not(#gate){display:none !important}
       tcB = 'Core plus one. This is the shape behind the ' + money(destPrice('disc', 3)) + ' discovery, and it '
           + 'works, but scope has to be agreed tightly upfront rather than discovered as we go.';
     } else {
-      tcH = 'Two people, below what we would recommend';
+      tcH = 'Two people, the longest calendar';
       tcB = 'Ahmed and Imran alone. Discovery still lands in three weeks against a deliberately narrow scope, '
-          + 'but the build phases get slow enough that elapsed time costs you more than the team would have.';
+          + 'and the build phases deliver the same scope over more months. Time is the lever here rather than '
+          + 'what gets built.';
     }
     setTxt('tcHead', tcH); setHtml('tcBody', tcB);
 
@@ -1149,7 +1150,7 @@ body.locked > *:not(#gate){display:none !important}
     else if (c.eqNow > 0) chips += '<span class="chip on">You hold control</span>';
     if (c.upfront <= MIN_UPFRONT && c.eqSign > 0) chips += '<span class="chip">Maximum risk to us</span>';
     if (c.d !== 'market' && c.eqSign > 0) chips += '<span class="chip">Journey not yet funded</span>';
-    if (c.n <= 2) chips += '<span class="chip">Under-crewed</span>';
+    if (c.n <= 2) chips += '<span class="chip">Longest calendar</span>';
     setHtml('chips', chips);
 
     /* ---- verdict ---- */

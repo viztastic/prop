@@ -371,9 +371,9 @@ body.locked > *:not(#gate){display:none !important}
     <h1>Build the deal <em>that suits your cash position</em>.</h1>
     <p class="lede">
       Three things move on this page: who is on the team, how far along the journey you are committing today,
-      and how you settle it. Paying cash is cheapest and leaves nothing behind. Deferring means we fund the
-      build, and what we take for that is a stake in the platform company, never in your gym. Bringing us
-      paying venues is the fastest way to buy that stake back down.
+      and how you settle it. Paying cash is cheapest and leaves nothing behind. Deferring means part of it is
+      settled as a stake in the platform company, never in your gym. Bringing us paying venues is the fastest
+      way to buy that stake back down.
     </p>
   </div>
 </header>
@@ -505,7 +505,7 @@ body.locked > *:not(#gate){display:none !important}
           <div class="t">Paid upfront, in cash</div>
           <div class="v" id="vUp">$40,000</div>
         </div>
-        <p class="lvsub" id="sUp">You are at <strong>8%</strong> of this phase. $460,000 is owed on it, and <strong>$1,260,000</strong> of the journey to market ready is funded by us.</p>
+        <p class="lvsub" id="sUp">You are at <strong>8%</strong> of this phase. $460,000 is deferred on it, and <strong>$1,260,000</strong> of the journey to market ready is not yet funded.</p>
         <input type="range" id="rUp" min="0" max="100" step="1" value="0"
                aria-label="Cash paid upfront">
         <div class="ticks"><span id="tkUpA">Minimum $40,000</span><span>Half</span><span>Paid in full</span></div>
@@ -516,7 +516,7 @@ body.locked > *:not(#gate){display:none !important}
           <div class="t">Paying venues you bring in</div>
           <div class="v ch" id="vCh">0 venues</div>
         </div>
-        <p class="lvsub" id="sCh">A signed, paying venue is worth <strong>$14,400</strong> against what we are funding, and ratchets our stake down by the same proportion. <strong>88</strong> takes us to the floor, and just <strong>32</strong> clears what you owe on this phase.<br><span style="color:var(--success-ink)">Credit is written once a venue is signed, live on the platform and has prepaid twelve months or more.</span></p>
+        <p class="lvsub" id="sCh">A signed, paying venue is worth <strong>$14,400</strong> against the unfunded journey, and ratchets our stake down by the same proportion. <strong>88</strong> takes us to the floor, and just <strong>32</strong> clears the deferral on this phase.<br><span style="color:var(--success-ink)">Credit is written once a venue is signed, live on the platform and has prepaid twelve months or more.</span></p>
         <input type="range" class="ch" id="rCh" min="0" max="150" step="1" value="0"
                aria-label="Paying venues you bring in">
         <div class="ticks"><span>None</span><span>75 venues</span><span>150</span></div>
@@ -527,11 +527,11 @@ body.locked > *:not(#gate){display:none !important}
           <div class="t">Our stake in the platform company</div>
           <div class="v eq" id="vEq">67.8%</div>
         </div>
-        <p class="lvsub" id="sEq">Issued at <strong>67.8%</strong> against $1,260,000 of the journey we are funding, currently <strong>67.8%</strong>, ratcheting to <strong>38.8%</strong> once that is funded. In the platform company, never in Rialto.</p>
+        <p class="lvsub" id="sEq">Priced at <strong>67.8%</strong> against $1,260,000 of the journey not yet funded, currently <strong>67.8%</strong>, ratcheting to <strong>38.8%</strong> once it is funded. In the platform company, never in Rialto.</p>
         <div style="height:6px;border-radius:999px;background:var(--line);overflow:hidden">
           <div id="barEq" style="height:100%;width:0%;background:var(--indigo);transition:width 260ms cubic-bezier(.4,0,.2,1)"></div>
         </div>
-        <div class="ticks"><span id="tkEqA">At signature 67.8%</span><span id="tkEqB">Floor 38.8%</span></div>
+        <div class="ticks"><span id="tkEqA">Ceiling 67.8%</span><span id="tkEqB">Floor 38.8%</span></div>
       </div>
     </div>
 
@@ -540,25 +540,25 @@ body.locked > *:not(#gate){display:none !important}
       <p style="font-size:14px">The stake is priced against <strong>the whole journey to market ready</strong>,
       rather than against the phase you are committing to today. That is deliberate, and it is the part most
       worth understanding before anything is signed.</p>
-      <p style="font-size:14px"><strong>If you stop at a phase boundary you owe nothing further.</strong> What
-      the stake buys is the other side of that: our commitment to fund and build the rest of the journey
-      ourselves. A platform company holding only a discovery prototype is worth very little; what makes it worth
-      something is phases 2 and 3, and where you have not funded those, we do.</p>
+      <p style="font-size:14px"><strong>If you stop at a phase boundary you owe nothing further.</strong> The
+      stake simply reflects the part of the journey that is not yet funded, and equity is earned as that work
+      is actually delivered against the agreed requirements. Nothing on this page commits either side to a
+      phase beyond the one being signed.</p>
       <p style="font-size:14px;margin-bottom:0">So the stake comes down as the journey gets funded, in cash or
       in venues, whichever you prefer. Fund all of it and we sit at the floor. Fund the minimum and we sit near
       the ceiling, which is where the risk sits too.</p>
       <div class="callout indigo" style="margin-bottom:0;margin-top:16px">
-        <p style="margin:0;font-size:13.5px" id="journeyNote">You are committing to <strong>run rialto</strong> at $500,000, but market ready costs <strong>$1,300,000</strong>. So while you owe $460,000 on this phase, we are carrying <strong>$1,260,000</strong> of the road to a platform worth owning. That gap is why the stake sits at 67.8% rather than something smaller. Fund more of the journey and it comes down.</p>
+        <p style="margin:0;font-size:13.5px" id="journeyNote">You are committing to <strong>run rialto</strong> at $500,000, but market ready costs <strong>$1,300,000</strong>. So while $460,000 is deferred on this phase, <strong>$1,260,000</strong> of the road to a platform worth owning is still unfunded. That gap is why the stake sits at 67.8% rather than something smaller. Fund more of the journey and it comes down.</p>
       </div>
     </div>
 
     <div class="card">
       <h3>How the engagement gets settled</h3>
       <p class="hint">Every dollar of consideration we receive, and in what form.</p>
-      <div class="bar" id="bar"><div class="seg cash" style="width:8%" title="Cash: $40,000"></div><div class="seg debt" style="width:92%" title="Owed: $460,000">Owed</div></div>
+      <div class="bar" id="bar"><div class="seg cash" style="width:8%" title="Cash: $40,000"></div><div class="seg debt" style="width:92%" title="Deferred: $460,000">Deferred</div></div>
       <div class="key">
         <span><i style="background:var(--accent)"></i>Cash upfront</span>
-        <span><i style="background:var(--warning)"></i>Owed on this phase</span>
+        <span><i style="background:var(--warning)"></i>Deferred on this phase</span>
         <span><i style="background:var(--success)"></i>Retired by venues</span>
       </div>
       <div class="presets" style="margin-top:20px">
@@ -570,7 +570,7 @@ body.locked > *:not(#gate){display:none !important}
       </div>
       <div class="callout ok" style="margin-bottom:0">
         <h4 id="anchorHead">88 paying venues takes us to the floor</h4>
-        <p style="margin:0;font-size:13.5px" id="anchorBody"><strong>88 signed venues, live and prepaid</strong>, funds the entire $1,260,000 we are carrying and takes our stake from 67.8% to its 38.8% floor without another dollar of cash. That is $422,400 a year of subscription banked, most of it paid up front. The ratchet stops at the floor: venues cannot take our holding to zero any more than cash can.</p>
+        <p style="margin:0;font-size:13.5px" id="anchorBody"><strong>88 signed venues, live and prepaid</strong>, funds the entire $1,260,000 still open on the journey and takes our stake from 67.8% to its 38.8% floor without another dollar of cash. That is $422,400 a year of subscription banked, most of it paid up front. The ratchet stops at the floor: venues cannot take our holding to zero any more than cash can.</p>
       </div>
     </div>
 
@@ -601,13 +601,13 @@ body.locked > *:not(#gate){display:none !important}
         <h3>The platform company</h3>
         <span class="badge b-off" id="covBadge">Formed &middot; we hold 67.8%</span>
       </div>
-      <p style="font-size:13.5px" id="covIntro">We are funding $1,260,000 of the journey to market ready. What we take for it is a stake in a <strong>new company that holds SFIDI OS</strong>, and you buy it back down as that journey gets funded.</p>
+      <p style="font-size:13.5px" id="covIntro">There is $1,260,000 of the journey to market ready not yet funded. What that gap prices is a stake in a <strong>new company that holds SFIDI OS</strong>, and you buy it back down as the journey gets funded.</p>
 
       <div class="ratchet">
         <div class="rc">
-          <div class="k">At signature</div>
+          <div class="k">The ceiling</div>
           <div class="n" id="rcA">67.8%</div>
-          <div class="s">While we are funding the journey</div>
+          <div class="s">While the journey is unfunded</div>
         </div>
         <div class="arrow">&rarr;</div>
         <div class="rc">
@@ -622,12 +622,12 @@ body.locked > *:not(#gate){display:none !important}
         <li><strong>A new company holds SFIDI OS.</strong> Not your gym. Rialto, its members and its revenue stay
         entirely yours and are never part of this.</li>
         <li><strong>You contribute what we cannot buy:</strong> the flagship venue, the operating expertise, the
-        first customer, the brand and the operator network. We contribute the build, funded ourselves.</li>
+        first customer, the brand and the operator network. We contribute the build.</li>
         <li><strong>The stake is priced against the journey to market ready.</strong> Clear it in cash or by
         bringing paying venues. Both count identically, and the stake ratchets from 70% toward a 40% floor.</li>
         <li><strong>The floor holds at 40%.</strong> That is where a technical co-founder who funded and built
         the product lands, and the ratchet stops there.</li>
-        <li><strong>One instrument.</strong> The equity is the entire price of us carrying it, with no interest
+        <li><strong>One instrument.</strong> The equity is the entire price of the deferral, with no interest
         or premium on top.</li>
         <li><strong>Protections both ways:</strong> information rights, tag-along and drag-along, pre-emptive
         rights, and a shareholders agreement your adviser marks up.</li>
@@ -722,16 +722,16 @@ body.locked > *:not(#gate){display:none !important}
       <div style="margin-top:18px">
         <div class="pr"><div class="l">Committed today<small id="pDays">5 people · 2.75 months · The old system switched off. Rialto trading on SFIDI OS.</small></div><div class="v" id="pList">$500,000</div></div>
         <div class="pr"><div class="l">Cash upfront<small>On signature and across the build</small></div><div class="v" id="pCash">$40,000</div></div>
-        <div class="pr"><div class="l">Owed on this phase<small id="pDebtSub">Face value. No interest, no premium.</small></div><div class="v a" id="pDebt">$460,000</div></div>
+        <div class="pr"><div class="l">Deferred on this phase<small id="pDebtSub">Face value. No interest, no premium.</small></div><div class="v a" id="pDebt">$460,000</div></div>
         <div class="pr"><div class="l">Retired by paying venues<small id="pChanSub">No venues brought in</small></div><div class="v g" id="pChan">Nil</div></div>
-        <div class="pr"><div class="l">Still owed on this phase<small id="pRemSub">$19,167/month over 24 months from go-live</small></div><div class="v" id="pRem">$460,000</div></div>
+        <div class="pr"><div class="l">Still deferred on this phase<small id="pRemSub">$19,167/month if bought down over 24 months from go-live</small></div><div class="v" id="pRem">$460,000</div></div>
         <div class="pr"><div class="l">Cloud and AI<small id="pHardSub">$4,200/month across 2.75 months, direct to you</small></div><div class="v" id="pHard">$11,550</div></div>
       </div>
 
       <div class="headline">
-        <div class="lab">Total cash out of your pocket</div>
+        <div class="lab">Cash to clear this phase</div>
         <div class="big" id="pTotal">$511,550</div>
-        <div class="note" id="pTotalNote">Upfront $40,000 plus $460,000 still owed plus cloud and AI $11,550.<br>Plus 67.8% of the platform company, against $1,260,000 of the journey we are funding.</div>
+        <div class="note" id="pTotalNote">Upfront $40,000 plus cloud and AI $11,550, plus $460,000 if you clear the deferral in cash.<br>Plus 67.8% of the platform company, priced against $1,260,000 of the journey not yet funded.</div>
       </div>
 
       <div style="margin-top:24px">
@@ -747,7 +747,7 @@ body.locked > *:not(#gate){display:none !important}
 
     <div class="card" style="margin-top:18px">
       <h3>What this shape says</h3>
-      <p style="font-size:13.5px;margin:0" id="verdict">The most concentrated shape on the board. You put in $40,000 and we carry $1,260,000 of the journey, so we issue at 67.8% and hold the majority until you buy it back down. This is a co-founding shape rather than a purchase, and the venue lever is how you move off it.</p>
+      <p style="font-size:13.5px;margin:0" id="verdict">The most concentrated shape on the board. You put in $40,000 against $1,260,000 of unfunded journey, so the stake prices at 67.8% and we hold the majority until you buy it back down. This is a co-founding shape rather than a purchase, and the venue lever is how you move off it.</p>
     </div>
 
     <div class="card">
@@ -755,12 +755,13 @@ body.locked > *:not(#gate){display:none !important}
       <table>
         <tbody>
           <tr><td>During the build<span class="sub" id="mbSub">$40,000 upfront plus $11,550 cloud and AI, over 2.75 months</span></td><td class="r" id="mBuild">$18,745/mo</td></tr>
-          <tr><td>After go-live, for 24 months<span class="sub">Repayment on this phase plus running cloud and AI</span></td><td class="r" id="mAfter">$21,867/mo</td></tr>
+          <tr><td>Buying it down after go-live<span class="sub">If you clear the deferral in cash over 24 months, plus running cloud and AI</span></td><td class="r" id="mAfter">$21,867/mo</td></tr>
           <tr><td>Once it is clear<span class="sub">Cloud and AI only</span></td><td class="r">$2,700</td></tr>
         </tbody>
       </table>
-      <p style="font-size:12.5px;color:var(--muted);margin:14px 0 0">Repayment shown straight-line over 24 months
-      from go-live. There is no interest on it. Every dollar repaid ratchets the stake down instead.</p>
+      <p style="font-size:12.5px;color:var(--muted);margin:14px 0 0">Buy-down shown straight-line over 24 months
+      from go-live, and it is your choice rather than a schedule you owe. There is no interest on it. Every
+      dollar ratchets the stake down.</p>
     </div>
 
     <div class="card">
@@ -879,7 +880,7 @@ body.locked > *:not(#gate){display:none !important}
     if (upfront > rung) upfront = rung;
 
     var rungDeferred   = Math.max(0, rung - upfront);      // contractual debt on this phase
-    var journeyFunded  = Math.max(0, journey - upfront);   // what we carry to get to market
+    var journeyFunded  = Math.max(0, journey - upfront);   // unfunded remainder of the journey
 
     var f       = journey > 0 ? journeyFunded / journey : 0;
     var eqSign  = f * EQ_CEIL;
@@ -997,8 +998,8 @@ body.locked > *:not(#gate){display:none !important}
         + 'the journey to market ready unfunded, and that is what the stake is priced against.');
     } else {
       setHtml('sUp', 'You are at <strong>' + (c.upfront/c.rung*100).toFixed(0) + '%</strong> of this phase. '
-        + money(c.rungDeferred) + ' is owed on it, and <strong>' + money(c.journeyFunded) + '</strong> of the '
-        + 'journey to market ready is funded by us.');
+        + money(c.rungDeferred) + ' is deferred on it, and <strong>' + money(c.journeyFunded) + '</strong> of the '
+        + 'journey to market ready is not yet funded.');
     }
 
     /* ---- lever: venues ---- */
@@ -1008,14 +1009,14 @@ body.locked > *:not(#gate){display:none !important}
       chMsg = 'The journey is fully funded, so there is nothing left to retire. Bring venues anyway and we '
             + 'credit them against later scope and support.';
     } else if (state.venues === 0){
-      chMsg = 'A signed, paying venue is worth <strong>' + money(c.creditPerVenue) + '</strong> against what we '
-            + 'are funding, and ratchets our stake down by the same proportion. <strong>' + c.venuesToClear
+      chMsg = 'A signed, paying venue is worth <strong>' + money(c.creditPerVenue) + '</strong> against the '
+            + 'unfunded journey, and ratchets our stake down by the same proportion. <strong>' + c.venuesToClear
             + '</strong> takes us to the floor'
-            + (c.venuesForPhase > 0 ? ', and just <strong>' + c.venuesForPhase + '</strong> clears what you owe on this phase.' : '.');
+            + (c.venuesForPhase > 0 ? ', and just <strong>' + c.venuesForPhase + '</strong> clears the deferral on this phase.' : '.');
     } else if (c.journeyRemain > 0){
       chMsg = money(c.credit) + ' of credit against ' + money(c.prepaid) + ' a year of subscription banked. '
             + '<strong>' + (c.venuesToClear - state.venues) + ' more</strong> and our stake is at its floor'
-            + (c.rungRemaining > 0 ? ', with ' + money(c.rungRemaining) + ' still owed on this phase.' : ', and this phase is clear.');
+            + (c.rungRemaining > 0 ? ', with ' + money(c.rungRemaining) + ' still deferred on this phase.' : ', and this phase is clear.');
     } else if (c.surplus > 0){
       chMsg = '<strong>The journey is fully funded</strong>, with ' + money(c.surplus) + ' of surplus credit '
             + 'carried forward against later scope and support. Our stake is at its ' + pct(c.eqFloor) + ' floor.';
@@ -1034,23 +1035,23 @@ body.locked > *:not(#gate){display:none !important}
       setHtml('sEq', 'None. The whole journey to market ready is funded by you, so there is no stake and no '
         + 'platform company.');
     } else {
-      setTxt('tkEqA', 'At signature ' + pct(c.eqSign));
+      setTxt('tkEqA', 'Ceiling ' + pct(c.eqSign));
       setTxt('tkEqB', 'Floor ' + pct(c.eqFloor));
-      setHtml('sEq', 'Issued at <strong>' + pct(c.eqSign) + '</strong> against ' + money(c.journeyFunded)
-        + ' of the journey we are funding, currently <strong>' + pct(c.eqNow) + '</strong>, ratcheting to '
-        + '<strong>' + pct(c.eqFloor) + '</strong> once that is funded. In the platform company, never in Rialto.');
+      setHtml('sEq', 'Priced at <strong>' + pct(c.eqSign) + '</strong> against ' + money(c.journeyFunded)
+        + ' of the journey not yet funded, currently <strong>' + pct(c.eqNow) + '</strong>, ratcheting to '
+        + '<strong>' + pct(c.eqFloor) + '</strong> once it is funded. In the platform company, never in Rialto.');
     }
 
     /* ---- the journey note ---- */
     if (c.d === 'market'){
-      setHtml('journeyNote', 'You are committing to the whole journey, so what you owe on this phase and what we '
-        + 'are funding are the same number: <strong>' + money(c.journeyFunded) + '</strong>. Clear it and our '
+      setHtml('journeyNote', 'You are committing to the whole journey, so what is deferred on this phase and what '
+        + 'remains unfunded are the same number: <strong>' + money(c.journeyFunded) + '</strong>. Clear it and our '
         + 'stake goes to its ' + pct(c.eqFloor) + ' floor.');
     } else {
       setHtml('journeyNote', 'You are committing to <strong>' + c.dn.nm.toLowerCase() + '</strong> at '
-        + money(c.rung) + ', but market ready costs <strong>' + money(c.journey) + '</strong>. So while you owe '
-        + money(c.rungDeferred) + ' on this phase, we are carrying <strong>' + money(c.journeyFunded)
-        + '</strong> of the road to a platform worth owning. That gap is why the stake sits at '
+        + money(c.rung) + ', but market ready costs <strong>' + money(c.journey) + '</strong>. So while '
+        + money(c.rungDeferred) + ' is deferred on this phase, <strong>' + money(c.journeyFunded)
+        + '</strong> of the road to a platform worth owning is still unfunded. That gap is why the stake sits at '
         + pct(c.eqSign) + ' rather than something smaller. Fund more of the journey and it comes down.');
     }
 
@@ -1058,14 +1059,14 @@ body.locked > *:not(#gate){display:none !important}
     var total = c.upfront + c.rungRemaining + c.rungApplied;
     setHtml('bar',
         seg('cash', c.upfront,      total, 'Cash')
-      + seg('debt', c.rungRemaining,total, 'Owed')
+      + seg('debt', c.rungRemaining,total, 'Deferred')
       + seg('chan', c.rungApplied,  total, 'Venues'));
 
     /* ---- anchor ---- */
     if (c.journeyFunded > 0){
       setTxt('anchorHead', c.venuesToClear + ' paying venues takes us to the floor');
       setHtml('anchorBody', '<strong>' + c.venuesToClear + ' signed venues, live and prepaid</strong>, funds the '
-        + 'entire ' + money(c.journeyFunded) + ' we are carrying and takes our stake from ' + pct(c.eqSign)
+        + 'entire ' + money(c.journeyFunded) + ' still open on the journey and takes our stake from ' + pct(c.eqSign)
         + ' to its ' + pct(c.eqFloor) + ' floor without another dollar of cash. That is '
         + money(c.venuesToClear * state.fee * 12) + ' a year of subscription banked, most of it paid up front. '
         + 'The ratchet stops at the floor: venues cannot take our holding to zero any more than cash can.');
@@ -1080,16 +1081,16 @@ body.locked > *:not(#gate){display:none !important}
     if (c.eqSign > 0){
       if (cov) cov.classList.remove('off');
       if (badge){ badge.className = 'badge b-on'; badge.innerHTML = 'Formed &middot; we hold ' + pct(c.eqNow); }
-      setHtml('covIntro', 'We are funding ' + money(c.journeyFunded) + ' of the journey to market ready. What we '
-        + 'take for it is a stake in a <strong>new company that holds SFIDI OS</strong>, and you buy it back down '
-        + 'as that journey gets funded.');
+      setHtml('covIntro', 'There is ' + money(c.journeyFunded) + ' of the journey to market ready not yet funded. '
+        + 'What that gap prices is a stake in a <strong>new company that holds SFIDI OS</strong>, and you buy it '
+        + 'back down as the journey gets funded.');
       setTxt('rcA', pct(c.eqSign));
       setTxt('rcB', pct(c.eqFloor));
     } else {
       if (cov) cov.classList.add('off');
       if (badge){ badge.className = 'badge b-off'; badge.textContent = 'Not formed'; }
       setHtml('covIntro', 'The whole journey is funded by you, so no shares are issued and there is no platform '
-        + 'company. All of this activates the moment any part of it is one we are funding.');
+        + 'company. All of this activates the moment any part of the journey is deferred.');
       setTxt('rcA', '0.0%'); setTxt('rcB', '0.0%');
     }
 
@@ -1121,15 +1122,15 @@ body.locked > *:not(#gate){display:none !important}
     setTxt('pRem', c.rungRemaining > 0 ? money(c.rungRemaining) : 'Nil');
     $('pRem').className = 'v' + (c.rungRemaining > 0 ? '' : ' g');
     setTxt('pRemSub', c.rungRemaining > 0
-      ? money(c.rungRemaining / 24) + '/month over 24 months from go-live'
+      ? money(c.rungRemaining / 24) + '/month if bought down over 24 months from go-live'
       : 'Nothing outstanding on this phase');
 
     setTxt('pTotal', money(c.totalCash));
-    setHtml('pTotalNote', 'Upfront ' + money(c.upfront) + ' plus ' + money(c.rungRemaining)
-      + ' still owed plus cloud and AI ' + money(c.hardBuild) + '.'
+    setHtml('pTotalNote', 'Upfront ' + money(c.upfront) + ' plus cloud and AI ' + money(c.hardBuild)
+      + (c.rungRemaining > 0 ? ', plus ' + money(c.rungRemaining) + ' if you clear the deferral in cash.' : '.')
       + (c.eqSign > 0
-          ? '<br>Plus ' + pct(c.eqNow) + ' of the platform company, against ' + money(c.journeyFunded)
-            + ' of the journey we are funding.'
+          ? '<br>Plus ' + pct(c.eqNow) + ' of the platform company, priced against ' + money(c.journeyFunded)
+            + ' of the journey not yet funded.'
           : '<br>No shares issued.'));
 
     setTxt('pThem', pct(100 - c.eqNow));
@@ -1160,14 +1161,14 @@ body.locked > *:not(#gate){display:none !important}
         + 'You own the software and owe nothing. It is what we would take if you could, and the only shape that '
         + 'leaves nothing behind.';
     } else if (c.journeyRemain <= 0 && state.venues > 0){
-      v = 'Strong. ' + money(c.journeyFunded) + ' of the journey funded by us and all of it retired by '
+      v = 'Strong. ' + money(c.journeyFunded) + ' of the journey deferred and all of it retired by '
         + state.venues + ' signed venues worth ' + money(c.prepaid) + ' a year, most of it banked up front. '
         + 'Our stake has ratcheted from ' + pct(c.eqSign) + ' to its ' + pct(c.eqFloor) + ' floor, and you hold '
         + pct(100 - c.eqFloor) + ' of a platform other venues already run on.';
     } else if (c.d === 'disc'){
       v = 'You are buying three weeks of certainty for ' + money(c.rung) + ', which is the right first move. The '
         + 'other half of it: stopping here leaves ' + money(c.journeyFunded) + ' of the road to '
-        + 'market ready unfunded, and we would be carrying it. That is why the stake sits at ' + pct(c.eqSign)
+        + 'market ready unfunded. That is why the stake sits at ' + pct(c.eqSign)
         + ' rather than something proportional to a discovery fee. Commit further, or fund more of it, and it '
         + 'comes down quickly.';
     } else if (state.venues > 0 && c.journeyRemain > 0){
@@ -1175,13 +1176,13 @@ body.locked > *:not(#gate){display:none !important}
         + ' of the journey still on us. Our stake sits at ' + pct(c.eqNow) + ', and another '
         + (c.venuesToClear - state.venues) + ' venues takes it to the ' + pct(c.eqFloor) + ' floor.';
     } else if (c.upfront <= MIN_UPFRONT){
-      v = 'The most concentrated shape on the board. You put in ' + money(c.upfront) + ' and we carry '
-        + money(c.journeyFunded) + ' of the journey, so we issue at ' + pct(c.eqSign) + ' and hold the majority '
-        + 'until you buy it back down. This is a co-founding shape rather than a purchase, and the venue lever is '
-        + 'how you move off it.';
+      v = 'The most concentrated shape on the board. You put in ' + money(c.upfront) + ' against '
+        + money(c.journeyFunded) + ' of unfunded journey, so the stake prices at ' + pct(c.eqSign) + ' and we hold '
+        + 'the majority until you buy it back down. This is a co-founding shape rather than a purchase, and the '
+        + 'venue lever is how you move off it.';
     } else {
-      v = 'A conventional split. ' + money(c.upfront) + ' now, ' + money(c.rungDeferred) + ' owed on this phase, '
-        + 'and ' + money(c.journeyFunded) + ' of the journey funded by us against ' + pct(c.eqSign)
+      v = 'A conventional split. ' + money(c.upfront) + ' now, ' + money(c.rungDeferred) + ' deferred on this phase, '
+        + 'and ' + money(c.journeyFunded) + ' of the journey unfunded against ' + pct(c.eqSign)
         + ' of the platform company, ratcheting to ' + pct(c.eqFloor) + '. ' + c.venuesToClear
         + ' signed venues would fund the whole journey without another dollar of cash.';
     }
